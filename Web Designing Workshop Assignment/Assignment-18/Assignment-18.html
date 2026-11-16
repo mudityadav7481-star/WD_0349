@@ -1,1 +1,85 @@
-{\rtf1}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC College Admission 2026</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; }
+        header { background-color: #1a237e; color: white; text-align: center; padding: 20px; }
+        footer { background-color: #1a237e; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+        table, th, td { border: 1px solid #ccc; border-collapse: collapse; padding: 8px; text-align: center; }
+        table { margin: 0 auto; width: 80%; }
+        th { background-color: #e8eaf6; }
+        main { padding: 20px; }
+        fieldset { width: 70%; margin: 20px auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ABC College Admission 2026</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Courses and Fees</h2>
+            <p style="text-align: center;">Available Courses</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Seats</th>
+                        <th>Fees</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech CSE</td>
+                        <td>120</td>
+                        <td>&#8377;90,000</td>
+                    </tr>
+                    <tr>
+                        <td>BCA</td>
+                        <td>60</td>
+                        <td>&#8377;45,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <form action="submit.php" method="POST">
+                <fieldset>
+                    <legend>Application Form</legend>
+                    <p>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required style="width: 95%;">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required style="width: 95%;">
+                    </p>
+                    <p>
+                        <label for="course-select">Course:</label><br>
+                        <select id="course-select" name="course-select">
+                            <option value="btech">B.Tech CSE</option>
+                            <option value="bca">BCA</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="statement">Statement:</label><br>
+                        <textarea id="statement" name="statement" rows="5" style="width: 95%;"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Apply</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ABC College</p>
+    </footer>
+</body>
+</html>
