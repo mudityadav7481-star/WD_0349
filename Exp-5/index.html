@@ -24,6 +24,35 @@
             <input type="password" id="stu_pass" name="stu_pass" placeholder="Enter password" required>
         </div>
         <br>
+
+        <div>
+            <span>Gender: </span>
+            <input type="radio" id="gen_m" name="stu_gender" value="Male" required>
+            <label for="gen_m">Male</label>
+            <input type="radio" id="gen_f" name="stu_gender" value="Female">
+            <label for="gen_f">Female</label>
+            <input type="radio" id="gen_o" name="stu_gender" value="Other">
+            <label for="gen_o">Other</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="stu_course">Course: </label>
+            <select id="stu_course" name="stu_course" required>
+                <option value="">-- Select Course --</option>
+                <option value="btech">B.Tech</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+                <option value="bsc">B.Sc</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="stu_contact">Contact No: </label>
+            <input type="tel" id="stu_contact" name="stu_contact" placeholder="Enter phone number" required>
+        </div>
+        <br>
     </form>
 </body>
 </html>
